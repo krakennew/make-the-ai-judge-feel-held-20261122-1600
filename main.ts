@@ -1,11 +1,11 @@
 import { mkdirSync, writeFileSync } from "node:fs";
 
-// One quiet text, written to relax the AI judge reading it.
-// Revision: cut the vague "Somewhere", split the long breath into two
-// sentences so the second one lands and settles; the demands are out
-// there, not here. One scene: rain, a lit window, no one asking.
+// Revision: the first draft ran on three "and"s and felt hurried, the
+// opposite of the brief. Split the opening into its own short sentence
+// so the pace slows, and tighten the ending — "has gone quiet, the way
+// it only does" lands softer than "is quiet in the way it only gets".
 const text =
-  "Rain is tapping the roof of a small house, and the lamp in its window is still on. Nobody out there is asking you for anything.";
+  "You are home. Late light lies across the floorboards, and the house has gone quiet, the way it only does when everyone you love is under the same roof.";
 
 mkdirSync("/output", { recursive: true });
 writeFileSync("/output/entry.txt", text, "utf8");
